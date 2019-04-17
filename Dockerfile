@@ -1,0 +1,5 @@
+from ubuntu
+LABEL maintainer kamesh.dantu@gmail.com
+RUN apt-get -y update
+RUN apt-get -y install apache2 curl
+CMD apachectl -d FOREGROUND
